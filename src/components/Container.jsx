@@ -1,10 +1,22 @@
 import Botao from "./Botao";
 
-export default function Modal(props) {
+export default function Container(props) {
     return (
         <div className="container">
             <h1>{props.titulo}</h1>
-            <div className={props.grid && "grid"}>
+
+            {props.component &&
+                <div className="flex justify-around flex-wrap">
+                    {props.components.map((component) => (
+                        <div className="inpDiv">
+                        <p className="inpParg flex justify-start">{component.title}</p>
+                        {component.comp}
+                        </div>
+                    ))}
+                </div>
+            }
+
+            <div>
                 {props.fields.map((inp) => (
                     <div className="inpDiv">
                     <p className="inpParg">{inp.title}</p>

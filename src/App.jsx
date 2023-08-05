@@ -11,6 +11,7 @@ import Aprendiz from "./pages/aprendiz/aprendiz-main.jsx";
 import Emprestimo from "./pages/aprendiz/emprestimo.jsx";
 
 import Adm from "./pages/adm/adm-relatorio.jsx";
+import Problema from "./pages/aprendiz/problema";
 
 
 
@@ -25,7 +26,8 @@ export default function App() {
 
         {/* TELAS APRENDIZ */}
         <Route path="/aprendiz" element={<Aprendiz />} />
-        {/* <Route path="/aprendiz/emprestimo" element={ <Emprestimo /> }/> */}
+        <Route path="/aprendiz/emprestimo" element={ <Emprestimo /> }/>
+        <Route path="/aprendiz/problema" element={ <Problema /> }/>
         {/* TELAS ADM */}
         <Route path="/adm" element={<Adm />} />
       </Route>

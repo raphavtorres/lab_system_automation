@@ -51,7 +51,7 @@ nav .navLinks {
 }
 
 .conteudoOutlet {
-  height: 90vh;
+  height: 88vh;
   display: grid;
   place-items: center;
 }

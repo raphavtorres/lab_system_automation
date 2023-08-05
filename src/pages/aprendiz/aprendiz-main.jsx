@@ -15,20 +15,23 @@ export default function Aprendiz() {
                 <BotaoServico
                     name="Empréstimo"
                     src={ImgEmprestimo}
-                    href="/"
+                    href="/aprendiz/emprestimo"
                 />
                 <BotaoServico
                     name="Relatar Problema"
                     src={ImgProblema}
+                    href="/aprendiz/problema"
                 />
             </div>
             <div>
-                <img src={ImgResponsavel} alt="" />
-                <p className="pargAvisoEmprestimo">
-                    Você fez um empréstimo. <br />
-                    É responsável pelo NOTEBOOK e FONTE! <br />
-                    Após DEVOLVER clique no botão abaixo. <br />
-                </p>
+                <div className="flex justify-center items-center">
+                    <img src={ImgResponsavel} alt="" />
+                    <p className="pargAvisoEmprestimo ml-16">
+                        Você fez um empréstimo. <br />
+                        É responsável pelo NOTEBOOK e FONTE! <br />
+                        Após DEVOLVER clique no botão abaixo. <br />
+                    </p>
+                </div>
                 <Botao name="Devolvido" />
             </div>
         </div>

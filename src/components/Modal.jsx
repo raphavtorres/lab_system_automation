@@ -1,5 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'reat'
+import { Fragment, useState } from 'react'
 import Login from '../pages/login'
 import IconeAdicionar from '../assets/adicionar.png'
 

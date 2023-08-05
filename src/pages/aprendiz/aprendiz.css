@@ -1,0 +1,18 @@
+.pargAvisoEmprestimo {
+    font-weight: bold;
+}
+
+.divBtnServ {
+    display: flex;
+    align-items: center;
+}
+
+.botaoServico {
+    margin: 4em;
+    height: 15em;
+    width: 15em;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    @apply flex flex-col justify-center items-center
+}
+

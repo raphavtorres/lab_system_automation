@@ -1,7 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import Login from '../pages/login'
-import IconeAdicionar from '../assets/adicionar.png'
+
 
 export default function Modal(props) {
   let [isOpen, setIsOpen] = useState(false)
@@ -16,13 +15,13 @@ export default function Modal(props) {
 
   return (
     <>
-      <div className="absolute end-0 bottom-0 m-8">
+      <div className={props.class}>
         <button
           type="button"
           onClick={openModal}
           className="rounded-full p-0 w-14"
         >
-          <img src={IconeAdicionar} alt="" />
+          {props.btnAbrir}
         </button>
       </div>
 

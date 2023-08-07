@@ -42,8 +42,9 @@ nav .navLinks {
 
 .container {
   width: 40em;
-  min-width: fit-content;
   max-width: 90vw;
+  height: auto;
+  margin: 2rem 0 2rem 0;
   border: 1px solid #d9d9d973;
   border-radius: 20px;
   box-shadow: 2px 2px 10px rgba(20, 20, 20, 0.068);
@@ -59,18 +60,10 @@ nav .navLinks {
 .inputText {
   background-color: #d9d9d973;
   border: none;
-  border-radius: 10px;
-  width: 24em;
-  height: 3.5em;
-}
-
-.inputText::-webkit-input-placeholder {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  padding-left: 1em;
-  color: rgba(0, 0, 0, 0.26);
-  font-style: bold;
+  width: 24rem;
+  height: 3.5rem;
+  @apply  px-3 rounded-md text-base placeholder-slate-400
+  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500;
 }
 
 .grid {
@@ -84,6 +77,7 @@ nav .navLinks {
 
 .inpParg {
   font-weight: 600;
+  text-align: start;
 }
 
 .button {

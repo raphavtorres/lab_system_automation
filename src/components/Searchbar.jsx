@@ -7,7 +7,7 @@ export default function SearchBar() {
     const [valorDaBusca, setValorDaBusca] = useState();
     return (
         <div className="searchbar">
-            <input type="text" placeholder="Pesquise" onChange={(event) => {
+            <input className="" type="text" placeholder="Pesquise" onChange={(event) => {
                 setValorDaBusca(event.target.value);
             }} />
             <button><Icon icon="simple-line-icons:magnifier" /></button>

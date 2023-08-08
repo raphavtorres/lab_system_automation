@@ -1,36 +1,65 @@
 #root {
-  text-align: center;
+  @apply text-center;
 }
 
-.divLineImg {
-  line-height: 0;
-}
-
-.boschLine {
-  height: 10px;
-  width: 100%;
+/* NAVBAR */
+.colored-line {
+  @apply h-2.5 w-screen;
 }
 
 nav {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.11);
+  @apply h-auto w-screen flex justify-between items-center shadow-sm;
 }
 
 nav .logo {
-  height: 4em;
-  width: auto;
+  @apply h-16 w-auto;
 }
 
-nav .navLinks {
-  width: 30em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav .nav-links-dropdown {
+  @apply w-96 flex justify-between items-center;
 }
+
+nav .exit-btn {
+  background-image: url("assets/exit-icone.png");
+  @apply h-12 m-4 bg-contain bg-no-repeat bg-transparent;
+}
+
+.content-outlet {
+  height: 88vh;
+  display: grid;
+  place-items: center;
+}
+
+
+/* GLOBAL COMPONENTS */
+.container {
+  @apply w-3/4 max-w-4xl h-auto mx-0 my-8 py-12 px-0
+    border border-slate-200 rounded-2xl shadow-sm;
+}
+
+.container > .components-inputs {
+  @apply flex justify-around flex-wrap;
+}
+
+.input-div {
+  margin: 1em;
+}
+
+.inp-parag {
+  font-weight: 600;
+  @apply text-start flex justify-start;
+}
+
+.text-inp {
+  @apply w-96 h-14 px-3 rounded-md bg-gray-200 border-none 
+    text-base placeholder-gray-400
+    focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500;
+}
+
+/* APRENDIZ COMPONENTS */
+/* ADM COMPONENTS */
+
+
 
 .card {
   padding: 2em;
@@ -40,45 +69,12 @@ nav .navLinks {
   color: #888;
 }
 
-.container {
-  width: 42em;
-  max-width: 90vw;
-  height: auto;
-  margin: 2rem 0 2rem 0;
-  border: 1px solid #d9d9d973;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px rgba(20, 20, 20, 0.068);
-  padding: 3em 0em;
-}
-
-.conteudoOutlet {
-  height: 88vh;
-  display: grid;
-  place-items: center;
-}
-
-.inputText {
-  background-color: #d9d9d973;
-  border: none;
-  width: 24rem;
-  height: 3.5rem;
-  @apply  px-3 rounded-md text-base placeholder-slate-400
-  focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.inpDiv {
-  margin: 1em;
-}
 
-.inpParg {
-  font-weight: 600;
-  text-align: start;
-}
 
 .button {
   margin: 2em 0;
@@ -91,18 +87,49 @@ nav .navLinks {
   background-color: #215b7c;
 }
 
-.btnSair {
-  background-image: url("assets/exit-icone.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 2em;
-  background-color: transparent;
-  margin-right: 1em;
-}
+
 
 .btnCadastrarModal {
   @apply absolute end-0 bottom-0 m-8;
 }
+
+.inpSearchbar {
+  @apply  m-0.5 h-8 px-3 rounded-md text-base placeholder-slate-400
+  focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600;
+}
+
+
+
+
+
+/* APRENDIZ */
+.pargAvisoEmprestimo {
+  font-weight: bold;
+}
+
+.divBtnServ {
+  display: flex;
+  align-items: center;
+}
+
+.botaoServico {
+  margin: 4em;
+  height: 12rem;
+  width: 12rem;
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  @apply flex flex-col justify-center items-center;
+}
+
+.texareaAprendiz {
+  resize: none;
+  @apply w-full h-36 p-3;
+}
+
+
+/* ADM */
+
+
 
 @media (max-width: 800px) {
   .grid {

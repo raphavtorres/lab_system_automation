@@ -6,10 +6,10 @@ export default function Container(props) {
             <h1>{props.titulo}</h1>
 
             {props.component &&
-                <div className="flex justify-around flex-wrap">
+                <div className="components-inputs">
                     {props.components.map((component) => (
-                        <div className="inpDiv">
-                        <p className="inpParg flex justify-start">{component.title}</p>
+                        <div className="input-div">
+                            <p className="inp-parag">{component.title}</p>
                         {component.comp}
                         </div>
                     ))}
@@ -18,9 +18,9 @@ export default function Container(props) {
 
             <div>
                 {props.fields.map((inp) => (
-                    <div className="inpDiv">
-                    <p className="inpParg">{inp.title}</p>
-                    <input id={inp.id} placeholder={inp.placeholder} className="inputText" type={inp.type} />
+                    <div className="input-div">
+                        <p className="inp-parag">{inp.title}</p>
+                        <input id={inp.id} placeholder={inp.placeholder} className="text-inp" type={inp.type} />
                     </div>
                 ))}
             </div>

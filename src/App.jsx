@@ -14,7 +14,6 @@ import Adm from "./pages/adm/adm-relatorio.jsx";
 import Problema from "./pages/aprendiz/problema";
 
 
-
 export default function App() {
 
   const router = createBrowserRouter(
@@ -35,8 +34,6 @@ export default function App() {
   );
 
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <><RouterProvider router={router} /></>
   );
 };

@@ -2,14 +2,14 @@ import Botao from "../Botao";
 
 export default function ContainerAprendiz(props) {
     return (
-        <div className="container m-5">
+        <div className="container">
             <h1>{props.titulo}</h1>
 
             {props.components &&
-                <div className="flex justify-around flex-wrap">
+                <div className="components-inputs">
                     {props.components.map((component) => (
-                        <div className="inpDiv">
-                        <p className="inpParg flex justify-start">{component.title}</p>
+                        <div className="input-div">
+                        <p className="inp-parag">{component.title}</p>
                         {component.comp}
                         </div>
                     ))}
@@ -17,9 +17,9 @@ export default function ContainerAprendiz(props) {
             }
 
             {props.fields.map((inp) => (
-                <div className="inpDiv">
-                <p className="inpParg">{inp.title}</p>
-                <textarea className="inputText texareaAprendiz" placeholder={inp.placeholder} maxlength="400" rows="5" cols="33"></textarea>
+                <div className="input-div">
+                <p className="inp-parag">{inp.title}</p>
+                <textarea className="text-inp texareaAprendiz" placeholder={inp.placeholder} maxlength="400" rows="5" cols="33"></textarea>
                 </div>
             ))}
 

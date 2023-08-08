@@ -14,16 +14,16 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="divLineImg"><img className="boschLine" src={LineNav} alt="" /></div>
+            <div><img className="colored-line" src={LineNav} alt="" /></div>
 
             <nav>
                 <img className="logo" src={Logo} alt="" />
-                <div className="navLinks">
+                <div className="nav-links-dropdown">
                     <Dropdown options={options} />
                 </div>
-                <button className="btnSair"></button>
+                <button className="exit-btn"></button>
             </nav>
-            <main className="conteudoOutlet"><Outlet /></main>
+            <main className="content-outlet"><Outlet /></main>
         </>
     );
 };

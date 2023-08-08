@@ -9,9 +9,11 @@ import Login from "./pages/login.jsx";
 
 import Aprendiz from "./pages/aprendiz/aprendiz-main.jsx";
 import Emprestimo from "./pages/aprendiz/emprestimo.jsx";
-
-import Adm from "./pages/adm/adm-relatorio.jsx";
 import Problema from "./pages/aprendiz/problema";
+
+import Relatorio from "./pages/adm/adm-relatorio.jsx";
+import ListaProblemas from "./pages/adm/adm-problemas.jsx";
+
 
 
 export default function App() {
@@ -27,13 +29,13 @@ export default function App() {
         <Route path="/aprendiz" element={<Aprendiz />} />
         <Route path="/aprendiz/emprestimo" element={ <Emprestimo /> }/>
         <Route path="/aprendiz/problema" element={ <Problema /> }/>
+
         {/* TELAS ADM */}
-        <Route path="/adm" element={<Adm />} />
+        <Route path="/adm" element={<Relatorio />} />
+        <Route path="/adm/problemas" element={<ListaProblemas />} />
       </Route>
     )
   );
 
-  return (
-    <><RouterProvider router={router} /></>
-  );
+  return <RouterProvider router={router} />;
 };

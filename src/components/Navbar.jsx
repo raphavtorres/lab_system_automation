@@ -8,7 +8,10 @@ export default function Navbar() {
         { value: 'home', label: <Link to="/">Home</Link> },
         { value: 'login', label: <Link to="/login">Login</Link> },
         { value: 'cadastro', label: <Link to="/cadastro">Cadastro</Link> },
-        { value: 'adm', label: <Link to="/adm">ADM</Link> },
+
+        { value: 'adm', label: <Link to="/adm">Adm Relatorio</Link> },
+        { value: 'problemas', label: <Link to="/adm/problemas">Adm Problemas</Link> },
+
         { value: 'aprendiz', label: <Link to="/aprendiz">Aprendiz</Link> },
     ];
 

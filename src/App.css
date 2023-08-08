@@ -2,7 +2,9 @@
   @apply text-center;
 }
 
-/* NAVBAR */
+/* COMPONENTS */
+/* Global Components */
+/* Navbar */
 .colored-line {
   @apply h-2.5 w-screen;
 }
@@ -30,8 +32,7 @@ nav .exit-btn {
   place-items: center;
 }
 
-
-/* GLOBAL COMPONENTS */
+/* Container */
 .container {
   @apply w-3/4 max-w-4xl h-auto mx-0 my-8 py-12 px-0
     border border-slate-200 rounded-2xl shadow-sm;
@@ -42,12 +43,11 @@ nav .exit-btn {
 }
 
 .input-div {
-  margin: 1em;
+  @apply m-4;
 }
 
 .inp-parag {
-  font-weight: 600;
-  @apply text-start flex justify-start;
+  @apply font-semibold text-start flex justify-start;
 }
 
 .text-inp {
@@ -56,8 +56,68 @@ nav .exit-btn {
     focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500;
 }
 
-/* APRENDIZ COMPONENTS */
-/* ADM COMPONENTS */
+/* Botao */
+.button {
+  @apply my-8 mx-0 text-white bg-blue-500 transition duration-300;
+}
+
+.button:hover {
+  @apply bg-[#215b7c];
+}
+
+/* Searchbar */
+.searchbar .searchbar-inp {
+  @apply  m-0.5 h-8 px-3 rounded-md text-base placeholder-slate-400
+  focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600;
+}
+
+
+/* Aprendiz components */
+/* BotaoServico */
+.servico-btn {
+  @apply m-16 h-48 w-48 border border-slate-300
+    flex flex-col justify-center items-center
+    bg-slate-200 rounded-2xl text-slate-900
+    transition duration-500;
+}
+
+.servico-btn:hover {
+  @apply bg-slate-400;
+}
+
+
+/* Adm components */
+/* ModalAdm */
+.modal-adm-div {
+  @apply text-center;
+}
+
+.checkboxes {
+  @apply mt-10 mb-5 ml-5;
+}
+
+
+/* PAGES */
+/* Global pages */
+
+/* Aprediz pages */
+.pargAvisoEmprestimo {
+  font-weight: bold;
+}
+
+.divBtnServ {
+  display: flex;
+  align-items: center;
+}
+
+.texareaAprendiz {
+  resize: none;
+  @apply w-full h-36 p-3;
+}
+
+/* Adm pages */
+
+
 
 
 
@@ -75,59 +135,14 @@ nav .exit-btn {
 }
 
 
-
-.button {
-  margin: 2em 0;
-  color: white;
-  background-color: #3082B0;
-  transition: 0.3s;
-}
-
-.button:hover {
-  background-color: #215b7c;
-}
-
-
-
 .btnCadastrarModal {
   @apply absolute end-0 bottom-0 m-8;
 }
 
-.inpSearchbar {
-  @apply  m-0.5 h-8 px-3 rounded-md text-base placeholder-slate-400
-  focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600;
-}
 
 
 
-
-
-/* APRENDIZ */
-.pargAvisoEmprestimo {
-  font-weight: bold;
-}
-
-.divBtnServ {
-  display: flex;
-  align-items: center;
-}
-
-.botaoServico {
-  margin: 4em;
-  height: 12rem;
-  width: 12rem;
-  background-color: #D9D9D9;
-  border-radius: 20px;
-  @apply flex flex-col justify-center items-center;
-}
-
-.texareaAprendiz {
-  resize: none;
-  @apply w-full h-36 p-3;
-}
-
-
-/* ADM */
+/* ADM PAGES */
 
 
 

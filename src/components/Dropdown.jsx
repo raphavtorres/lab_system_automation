@@ -14,7 +14,7 @@ export default function Dropdown(props) {
     const [selectedOption, setSelectedOption] = useState(null);
 
     return (
-        <div className="App">
+        <div className="dropdown">
             <Select
                 placeholder="Selecione..."
                 defaultValue={selectedOption}

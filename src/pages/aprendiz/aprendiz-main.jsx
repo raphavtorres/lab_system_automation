@@ -5,7 +5,6 @@ import ImgResponsavel from "../../assets/responsavel_personagem.png";
 import ImgEmprestimo from "../../assets/emprestimo-icone.png";
 import ImgProblema from "../../assets/problema-icone.png";
 
-import './aprendiz.css';
 
 export default function Aprendiz() {
 

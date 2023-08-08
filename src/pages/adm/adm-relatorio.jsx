@@ -3,6 +3,7 @@ import SearchBar from '../../components/Searchbar.jsx';
 import Modal from '../../components/Modal.jsx';
 import ModalAdm from '../../components/adm/ModalAdm.jsx';
 import Selectbox from "../../components/Selectbox.jsx";
+
 import IconeAdicionar from '../../assets/adicionar.png'
 
 export default function Adm() {
@@ -19,13 +20,13 @@ export default function Adm() {
 
     return (
         <>
-        <div className="w-3/4 mt-10 flex justify-between self-start">
+        <div className="dropdown-div">
             <Dropdown options={options}/>
             <SearchBar />
         </div>
         
         <Modal 
-            class="btnCadastrarModal"
+            class="signup-modal-btn"
             btnAbrir={<img src={IconeAdicionar} alt="" />}
             component={
                 <ModalAdm 
@@ -47,7 +48,7 @@ export default function Adm() {
                     nomeBotao="Modificar"
 
                     components={[
-                        {title: "ID computador", comp: <input placeholder="ID computador" className="inputText" type="text" />},
+                        {title: "ID computador", comp: <input placeholder="ID computador" className="text-inp" type="text" />},
                         {title: "Local", comp: <Selectbox options={locais} />},
                     ]} 
                 />

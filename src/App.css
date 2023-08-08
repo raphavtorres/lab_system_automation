@@ -101,19 +101,15 @@ nav .exit-btn {
 /* Global pages */
 
 /* Aprediz pages */
-.pargAvisoEmprestimo {
-  font-weight: bold;
+.dropdown-div {
+  @apply  w-3/4 mt-10 flex justify-between self-start;
 }
 
-.divBtnServ {
-  display: flex;
-  align-items: center;
+.signup-modal-btn {
+  @apply absolute end-0 bottom-0 m-8;
 }
 
-.texareaAprendiz {
-  resize: none;
-  @apply w-full h-36 p-3;
-}
+
 
 /* Adm pages */
 
@@ -134,10 +130,21 @@ nav .exit-btn {
   grid-template-columns: repeat(2, 1fr);
 }
 
-
-.btnCadastrarModal {
-  @apply absolute end-0 bottom-0 m-8;
+.pargAvisoEmprestimo {
+  font-weight: bold;
 }
+
+.divBtnServ {
+  display: flex;
+  align-items: center;
+}
+
+.texareaAprendiz {
+  resize: none;
+  @apply w-full h-36 p-3;
+}
+
+
 
 
 

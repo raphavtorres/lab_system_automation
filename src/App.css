@@ -85,6 +85,12 @@ nav .exit-btn {
   @apply bg-slate-400;
 }
 
+/* ContainerAprendiz */
+.text-area-div {
+  @apply resize-none w-full h-36 p-3;
+}
+
+
 
 /* Adm components */
 /* ModalAdm */
@@ -101,6 +107,23 @@ nav .exit-btn {
 /* Global pages */
 
 /* Aprediz pages */
+/* aprendiz-main */
+.servico-btn-div {
+  @apply flex items-center;
+}
+
+.aviso-emprestimo {
+  @apply flex justify-around font-bold;
+}
+
+/* problema */
+.container-aprendiz-div {
+  @apply flex flex-wrap w-full justify-evenly;
+}
+
+
+/* Adm pages */
+/* adm-relatorio */
 .dropdown-div {
   @apply  w-3/4 mt-10 flex justify-between self-start;
 }
@@ -108,48 +131,6 @@ nav .exit-btn {
 .signup-modal-btn {
   @apply absolute end-0 bottom-0 m-8;
 }
-
-
-
-/* Adm pages */
-
-
-
-
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.pargAvisoEmprestimo {
-  font-weight: bold;
-}
-
-.divBtnServ {
-  display: flex;
-  align-items: center;
-}
-
-.texareaAprendiz {
-  resize: none;
-  @apply w-full h-36 p-3;
-}
-
-
-
-
-
-
-/* ADM PAGES */
 
 
 
